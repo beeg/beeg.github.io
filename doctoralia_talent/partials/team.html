@@ -1,0 +1,52 @@
+<div class="row container home">
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>¿Quienes somos?</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12" style="text-align:center;">
+			<img ng-src="assets/images/teamanim2.gif"><br/>
+			<p style="margin-top:25px;">
+				Aunque formamos parte de un mismo proyecto y compartimos un espíritu común, en tu día a día en Doctoralia llegarás a relacionarte con hasta 7 equipos diferentes.<br/> ¡Éstos somos nosotros!
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>Equipos</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<select class="form-control" ng-model="selectedTeam" ng-options="item.name for item in teams" ng-init="selectedTeam=teams[0]" ng-change="updateMember()" ></select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<h1>{{selectedTeam.name}}</h1>
+		</div>
+	</div>
+	<div class="row team-description">
+		<div class="col-lg-6">
+			<ul>
+				<li ng-repeat="o in selectedTeam.members" style="background-image:url('{{o.img}}');" ng-click="selectMember(o)"></li>
+			</ul>
+		</div>
+		<div class="col-lg-6 member-description">
+			<span class="member-img" style="background-image:url('{{selectedMember.img}}');" ></span>
+			<p>{{selectedMember.name}}</p>
+			<p>{{selectedMember.position}}</p>
+			<p ng-repeat="quote in selectedMember.quote">{{ quote }}</p>
+		</div>
+	</div>
+
+	<div class="row next-section">
+		<div class="col-lg-12">
+			<a ng-href="/#/work" class="btn">Siguiente</a>
+		</div>
+	</div>
+
+
+</div>

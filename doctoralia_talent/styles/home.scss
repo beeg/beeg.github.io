@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../assets/fonts/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
+html  { 
+  height: 100%;
+}
+
+body  {
+  height: 100%;
+  background-color: #F2F2F2;
+}
+
+header  {
+  background-color: #4bae51;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  text-align: center;
+
+  img   {
+    margin: 10px 0;
+  } 
+
+  nav   {
+    display: none;
+    a   {
+      color: #FFF;
+
+      &:hover   {
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.dralia-login   {
+  background-image: url('../assets/images/world-green.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 100%;
+
+  h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 60px;
+    font-family: 'Open Sans Regular';
+    margin: 50px 0;
+  }
+
+  .dralia-login-form  {
+      width: 300px;
+      text-align: center;
+      margin: 20px auto;
+
+      .form-group {
+        .form-control {
+          margin: 20px 0;
+        }
+      }
+
+      button  {
+        background-color: #CCC;
+        padding: 10px 40px;
+        color: #FFF;
+
+        &:hover   {
+          color: #FFF;
+        }
+      }
+  }
+}
+
+
+
+main{
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+
+  .container  {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.home   {
+  background-color: #F2F2F2;
+
+  p   {
+    line-height: 28px;
+  }
+
+
+  .next-section {
+    text-align: center;
+    margin: 20px 0;
+    a   {
+      background-color: #008000;
+      color: #FFF;
+      padding: 10px 35px;
+    }
+  }
+
+  .history-founders {
+    margin: 30px 0;
+    text-align: center;
+
+    p   {
+      &:first-of-type {
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .statements   {
+    
+    & > div   {
+      border-right: 1px solid #CCC;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      p   {
+        &:first-of-type {
+          margin-bottom: 18px;
+          text-align: center;
+          font-size: 18px;
+          color: green;
+        }
+      }
+
+      ul  {
+        margin: 0;
+        li {
+          margin: 10px 0;
+        }
+      }
+
+
+      &:last-of-type  {
+        border-right: 0;
+      }
+    }
+  }
+
+  .team-description {
+    ul  {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;  
+      li  {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 20px;
+        border: 2px solid;
+        border-radius: 50%;
+        background-size: 90px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &:hover   {
+            -webkit-filter: initial;
+            filter: initial;
+        }
+
+        &:nth-of-type(4n+1) {
+          margin-left: 0;
+        }
+
+        &:nth-of-type(4n+0) {
+          margin-right: 0;
+        }
+
+      }
+    }
+
+    & > div   {
+      border-right: 1px solid #ccc;
+      text-align: center;
+
+      &:last-of-type  {
+        border-right: 0;
+
+        ul  {
+          list-style-type: disc;
+          list-style-position: inside;
+
+          li  {
+            cursor: initial;
+            display: list-item;
+            padding: 10px;
+            background: transparent;
+            border: 0;
+            width: auto;
+            height: auto;
+            margin: auto;
+            border-radius: 0;
+
+            &:nth-of-type(4n+1) {
+            }
+
+            &:nth-of-type(4n+0) {
+            }
+          }
+        }
+      }
+
+      &.member-description  {
+        .member-img   {
+          display: inline-block;
+          width: 180px;
+          height: 180px;
+          box-sizing: border-box;
+          padding: 0;
+          margin: 20px;
+          border: 2px solid;
+          border-radius: 50%;
+          background-size: 180px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        p   {
+          &:first-of-type {
+            color: green;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+ 
+h2{
+  font-size: 30px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Open Sans Semibold', 'Open Sans'; 
+  color: #008000;
+  font-style: normal;    
+}
+
+h1 {
+  font-size: 40px;
+}
+
+pre{
+  padding: 12px;
+}
+
+nav   {
+  margin: 30px;
+  text-align: center;
+  a   {
+    margin: 0 5px;
+    text-transform: capitalize;
+  }
+}
+
+pre{
+  background-color: #F0F0F0;
+}
+
+.container  {
+  padding: 0 20px;
+}
+
+ul.color-picker	{
+	margin: 20px 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0 10px;
+	}
+}
+
+table[dralia-table].arguments{
+  font-size: 14px;
+
+  tr td, tr th{
+    border: 1px solid #ccc;
+    vertical-align: top;
+  }
+
+  .inner-example{
+    font-size:12px;
+    pre, code{
+      background-color:#f9f9f9;
+    }
+  }
+}

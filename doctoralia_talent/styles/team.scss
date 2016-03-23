@@ -1,0 +1,130 @@
+.how-we-work  {
+
+  select  {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  & > .team-members   {
+    ul  {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li  {
+        display: inline-block;
+        margin: 0 10px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  & > .tools  {
+    ul  {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li  {
+        display: table;
+        margin: 25px 0;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        & > div   {
+          vertical-align: middle;
+          width: 120px;
+          height: 120px;
+          border: 2px solid;
+          border-radius: 50%;
+          text-align: center;
+          display: table-cell;
+
+          span {
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: top;
+          }
+        }        
+
+        p   {
+          display: table-cell;
+          padding-left: 20px;
+          box-sizing: border-box;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  & > .benefits  {
+    ul  {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li  {
+        display: table;
+        margin: 25px 0;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        & > div   {
+          vertical-align: middle;
+          width: 120px;
+          height: 120px;
+          border: 2px solid;
+          border-radius: 50%;
+          text-align: center;
+          display: table-cell;
+          box-sizing: border-box;
+          background-size: 120px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }        
+
+        p   {
+          display: table-cell;
+          padding-left: 20px;
+          box-sizing: border-box;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  & > .next-section   {
+    text-align: center;
+    margin-top: 20px;
+    a {
+      background-color: green;
+      color: #FFF;
+      padding: 10px 35px;
+    }
+  }
+
+  & > .bye   {
+    text-align: center;
+    margin-top: 20px;
+
+    p   {
+      margin: 20px 0;
+    }
+    
+    a {
+      color: green;
+    }
+  }
+}
