@@ -182,7 +182,7 @@
                           position: 'COO',
                           quote: [''],
                           img: 'assets/images/members/david.png'
-                        },
+                        }, 
                         {
                           name: 'Albert',
                           position: 'CEO',
@@ -221,7 +221,7 @@
             ]
           },
           {
-            name: 'UX & Copywriter',
+            name: 'UX & Copywriter', 
             members : [
                         {
                           name: 'Eduard',
@@ -239,7 +239,7 @@
                           name: 'Xavi',
                           position: 'Estoy en el departamento de Matching haciendo pinturitas para poder ofrecer de la forma más fàcil y amigable pacientes a los médicos, pensando yo por ellos',
                           quote: ['\"The world is full of \"One day\" \"'],
-                          img: 'assets/images/members/xavi.jpg'
+                          img: 'assets/images/members/xavi.gif'
                         },
                         {
                           name: 'Dani',
