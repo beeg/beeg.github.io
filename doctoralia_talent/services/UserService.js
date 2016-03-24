@@ -13,7 +13,7 @@
                           position: 'COO',
                           quote: [''],
                           img: 'assets/images/members/david.png'
-                        }, 
+                        },
                         {
                           name: 'Albert',
                           position: 'CEO',
